@@ -55,6 +55,14 @@ const computerVision = async (req, res) => {
   console.log('End of quickstart.');
 }
 
+const test = async (req, res) => {
+    const { url } = req.body
+    console.log(url);
+    console.log(req.file);
+    res.status(200).end();
+}
+
 module.exports = {
   computerVision,
+  test
 }
